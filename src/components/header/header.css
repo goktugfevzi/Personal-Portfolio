@@ -34,6 +34,7 @@ header {
   background: var(--color-primary);
 }
 
+
 .me {
   background: linear-gradient(var(--color-primary),transparent);
   width: 22rem;
@@ -44,8 +45,17 @@ header {
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
   padding: 5rem 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  align-items: flex-end; 
 }
-
+.me img {
+  width: auto; 
+  height: 125%; 
+  object-fit: cover;
+  object-position: center top; 
+  margin-top: -2rem;
+  margin-left: 1.5rem; 
+}
 .scroll_down {
   position: absolute;
   right: -2.3rem;

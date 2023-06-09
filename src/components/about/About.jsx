@@ -1,7 +1,6 @@
 import React from "react";
 import "./about.css";
 import Me from "../../assets/me-about.jpg";
-import { FaAward, FaCertificate, FaUniversity } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -15,34 +14,15 @@ const About = () => {
           </div>
         </div>
         <div className="about_content">
-          <div className="about_cards">
-            <article className="about_card">
-              <FaUniversity className="about_icon" />
-              <h5>Erciyes University</h5>
-              <small>Computer Engineering</small>
-            </article>
-            <article className="about_card">
-              <FaCertificate className="about_icon" />
-              <h5>Certificates</h5>
-              <small>5+</small>
-            </article>
-            <article className="about_card">
-              <FaAward className="about_icon" />
-              <h5>Experience</h5>
-              <small>1+ Years Working</small>
-            </article>
-          </div>
+        
           <p>
-            I’m a certified full-stack developer, who enjoys building
-            interactive interfaces with JavaScript, React and Ruby On Rails.
+          My name is GökTug Fevzi Özçelik, and I am 24 years old. I am a student at Erciyes University, studying Computer Engineering. Throughout my academic journey, I have had the opportunity to be involved in various projects in the fields of artificial intelligence, web programming, mobile programming, and game programming.
             <br />
             <br />
-            I'm also a Mentor and Project Reviewer at Microverse.
+            Currently, I am capable of designing websites, writing backend code, and working with databases. Additionally, I develop applications for the Google Play Store.
             <br />
             <br />
-            I'm open to Full-stack(remote/onsite) opportunities with a passion
-            of Front-end development. If you like what you see and have a
-            project you need coded, don’t hestiate to contact me.
+            I had the chance to intern at Iotech, where I completed tasks related to .Net and React. In the upcoming months, as part of the Erasmus+ Internship program, I will be interning at Rulmenti S.A company in Romania. Following that, I will complete my mandatory internship at Turkish Aerospace Industries, Inc. and graduate from my department.
           </p>
           <a href="#project" className="btn btn-primary">
             {" "}

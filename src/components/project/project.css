@@ -1,0 +1,120 @@
+.project {
+  margin-top: -3.5rem;
+}
+
+.project_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.project_item {
+  position: relative;
+  background: var(--color-bg-variant);
+  padding: 1.3rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.project_item:hover {
+  border-color: var(--color-primary-variant);
+  background: var(--color-primary-variant);
+}
+
+.project_item-image {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.project_item-image img {
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s ease;
+}
+
+.project_item:hover .project_item-image img {
+  filter: blur(4px);
+}
+
+.project_item-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project_item:hover .project_item-overlay {
+  opacity: 1;
+}
+
+.project_item-category {
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: x-large;
+  margin-bottom: 0.5rem;
+  margin-top: -1.5rem;
+}
+
+.project_item-icon {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project_item-icon svg {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+}
+
+.project_item-details {
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transition: visibility 0.3s ease, opacity 0.3s ease;
+}
+
+.project_item:hover .project_item-details {
+  opacity: 0.1;
+}
+
+.project_item-title {
+  color: var(--color-primary);
+}
+
+.project_item-cta {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .project {
+    margin-top: 15rem;
+  }
+  .project_container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+  .project_item-details {
+    top: 60%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .project_container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .project_item-details {
+    top: 60%;
+  }
+}
