@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaHome, FaUser, FaBook, FaProjectDiagram } from "react-icons/fa";
 import { AiFillMessage } from "react-icons/ai";
-import "./Nav.css"
+import "./nav.css"
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
@@ -45,28 +45,28 @@ const Nav = () => {
   return (
     <nav>
       <a
-        href="#"
+        href="/#"
         onClick={(e) => handleClick(e, "#")}
         className={activeNav === "#" ? "active" : ""}
       >
         <FaHome />
       </a>
       <a
-        href="#about"
+        href="/#about"
         onClick={(e) => handleClick(e, "#about")}
         className={activeNav === "#about" ? "active" : ""}
       >
         <FaUser />
       </a>
       <a
-        href="#experience"
+        href="/#experience"
         onClick={(e) => handleClick(e, "#experience")}
         className={activeNav === "#experience" ? "active" : ""}
       >
         <FaBook />
       </a>
       <a
-        href="#project"
+        href="/#project"
         onClick={(e) => handleClick(e, "#project")}
         className={activeNav === "#project" ? "active" : ""}
       >

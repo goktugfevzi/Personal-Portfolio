@@ -22,13 +22,30 @@ header {
 .language_buttons button {
   background: none;
   cursor: pointer;
-  padding: 0;
 }
 
 .language_buttons button img {
   filter: brightness(0.7);
   width: 24px;
   height: 24px;
+  transition: filter 0.3s ease;
+}
+.language_buttons button::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background-color: var(--color-primary);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+.language_buttons button:hover img {
+  filter: brightness(0.9);
 }
 
 .language_buttons button.active img {

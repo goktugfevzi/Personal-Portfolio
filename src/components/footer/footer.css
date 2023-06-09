@@ -1,10 +1,11 @@
 footer {
   background: var(--color-primary);
-  padding: 2rem ;
+  padding: 2rem;
   text-align: center;
   font-size: 0.9rem;
   margin-top: 5rem;
-  border-radius: 15rem 0.5rem;
+  border-top-left-radius: 7rem;
+  border-top-right-radius: 7rem;
 }
 
 footer a {
@@ -52,18 +53,25 @@ footer a {
   margin-bottom: 4.5rem;
   color: var(--color-bg);
 }
-
-@media screen and (max-width: 600px){
-  footer{
+@media screen and (max-width: 1024px) {
+  .footer {
+    margin-top: 100%;
+    width: var(--container-width-sm);
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    border-top-left-radius: 5rem;
+    border-top-right-radius: 5rem;
     margin-top: 500%;
     width: var(--container-width-sm);
   }
-   .permalinks {
-     flex-direction: column;
-     gap: 1.5rem;
-   }
+  .permalinks {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 
-   .footer_socials {
-     margin-bottom: 2.6rem;
-   }
+  .footer_socials {
+    margin-bottom: 2.6rem;
+  }
 }

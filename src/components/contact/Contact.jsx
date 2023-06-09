@@ -15,10 +15,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_w4g68gr",
-        "template_roca515",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        "TN_EsbT_N4HUcDcTg"
+        process.env.REACT_APP_USER_ID
       )
       .then(
         (result) => {
@@ -55,7 +55,7 @@ const Contact = () => {
           >
             <MdEmail className="contact_option-icon" />
             <h4>Email</h4>
-            <h5 >goktugfevziozcelik@gmail.com</h5>
+            <h5>goktugfevziozcelik@gmail.com</h5>
             <a
               href="mailto:goktugfevziozcelik@gmail.com"
               target="_blank"
@@ -110,7 +110,12 @@ const Contact = () => {
             placeholder={t("contact.placeholder1")}
             required
           />
-          <input type="email" name="email" placeholder={t("contact.placeholder2")} required />
+          <input
+            type="email"
+            name="email"
+            placeholder={t("contact.placeholder2")}
+            required
+          />
           <textarea
             name="message"
             rows="7"

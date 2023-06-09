@@ -12,7 +12,7 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer>
+    <footer className="footer">
       <ul className="permalinks">
         <li>
           <a href="#about">{t("footer.menu1")}</a>
