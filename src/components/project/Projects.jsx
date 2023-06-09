@@ -8,19 +8,21 @@ import IMG3 from "../../assets/portfolio3.png";
 import IMG4 from "../../assets/portfolio4.png";
 import IMG5 from "../../assets/portfolio5.png";
 import IMG6 from "../../assets/portfolio6.png";
+import { useTranslation } from "react-i18next";
+
 
 const projects = [
   {
     id: 1,
     image: IMG1,
-    title: "Prime Video Clone with React Native EXPO",
+    title: "Prime Video Clone",
     github: "https://github.com/goktugfevzi/Prime_Video_Clone_Expo",
     category: "Mobile Application",
   },
   {
     id: 2,
     image: IMG2,
-    title: "Personnel Tracking Application",
+    title: "Personnel Tracking App",
     github: "https://github.com/goktugfevzi/EmployerWebsite",
     category: "Full-Stack Website",
   },
@@ -48,7 +50,7 @@ const projects = [
   {
     id: 6,
     image: IMG6,
-    title: "Allah Tuttugunu Altin Etsin Funny App",
+    title: "Allah Tuttugunu Altin Etsin",
     github: "https://github.com/goktugfevzi/Allah-Tuttugunu-Altin-Etsin",
     category: "Mobile Application",
   },
@@ -56,6 +58,7 @@ const projects = [
 
 const Projects = () => {
   const [hoveredProject, setHoveredProject] = useState(null);
+  const { t } = useTranslation();
 
   const handleProjectClick = (githubLink) => {
     window.open(githubLink, "_blank");
@@ -63,10 +66,10 @@ const Projects = () => {
 
   return (
     <section id="project" className="project" >
-      <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      <h5>{t('portfolio.title')}</h5>
+      <h2>{t('portfolio.title2')}</h2>
       <div className="container project_container">
-        {projects.map(({ id, image, title, github, demo, category }) => {
+        {projects.map(({ id, image, title, github, category }) => {
           const isHovered = hoveredProject === id;
 
           return (

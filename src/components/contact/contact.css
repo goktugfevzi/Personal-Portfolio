@@ -1,5 +1,5 @@
 .contact {
-  margin-top: 20rem;
+  margin-top: 12rem;
 }
 
 .container.contact_container {
@@ -93,6 +93,7 @@ textarea {
 
 @media screen and (max-width: 600px) {
   .container.contact_container {
+    margin-top: 350%;
     width: var(--container-width-sm);
   }
 }

@@ -61,7 +61,7 @@
 
 @media screen and (max-width: 600px) {
   .experience {
-    margin-top: 20rem;
+    margin-top: 250%;
   }
   .experience_container {
     gap: 1rem;
@@ -69,10 +69,5 @@
   .experience_container > div {
     width: 95%;
     padding: 2rem 1rem;
-    margin: 0 auto;
-  }
-
-  .experience_content {
-    padding: 1rem;
   }
 }

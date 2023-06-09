@@ -12,15 +12,17 @@ import laravel from "../../assets/laravel.png";
 import next from "../../assets/next.png";
 import ts from "../../assets/ts.png";
 import vue from "../../assets/vue.png";
+import { useTranslation } from "react-i18next";
 
 const Experience = () => {
+  const { t } = useTranslation();
   return (
     <section id="experience" className="experience">
-      <h5>What Skills I Have</h5>
-      <h2>My Skills</h2>
+      <h5>{t('experience.title')}</h5>
+      <h2>{t('experience.title2')}</h2>
       <div className="container experience_container">
         <div className="experience_frontend">
-          <h3>Frontend Development</h3>
+          <h3>{t('experience.category1')}</h3>
           <div className="experience_content">
             <article className="experience_details">
               <img
@@ -30,7 +32,7 @@ const Experience = () => {
               />
               <div>
                 <h4>React Native</h4>
-                <small className="text-light">Experienced</small>
+                <small className="text-light">{t('experience.level1')}</small>
               </div>
             </article>
             <article className="experience_details">
@@ -41,7 +43,7 @@ const Experience = () => {
               />
               <div>
                 <h4>React & Redux</h4>
-                <small className="text-light">Intermediate</small>
+                <small className="text-light">{t('experience.level2')}</small>
               </div>
             </article>
 
@@ -49,14 +51,14 @@ const Experience = () => {
               <img src={ts} className="experience_details-icon" alt="css" />
               <div>
                 <h4>TypeScript</h4>
-                <small className="text-light">Intermediate</small>
+                <small className="text-light">{t('experience.level2')}</small>
               </div>
             </article>
             <article className="experience_details">
               <img src={js} className="experience_details-icon" alt="js" />
               <div>
                 <h4>JavaScript</h4>
-                <small className="text-light">Intermediate</small>
+                <small className="text-light">{t('experience.level2')}</small>
               </div>
             </article>
 
@@ -64,20 +66,20 @@ const Experience = () => {
               <img src={vue} className="experience_details-icon" alt="vue" />
               <div>
                 <h4>Vue</h4>
-                <small className="text-light">Beginner</small>
+                <small className="text-light">{t('experience.level3')}</small>
               </div>
             </article>
             <article className="experience_details">
               <img src={next} className="experience_details-icon" alt="next" />
               <div>
                 <h4>Next</h4>
-                <small className="text-light">Beginner</small>
+                <small className="text-light">{t('experience.level3')}</small>
               </div>
             </article>
           </div>
         </div>
         <div className="experience_backend">
-          <h3>Backend Development</h3>
+          <h3>{t('experience.category2')}</h3>
           <div className="experience_content">
             <article className="experience_details">
               <img
@@ -87,7 +89,7 @@ const Experience = () => {
               />
               <div>
                 <h4>C#</h4>
-                <small className="text-light">Intermediate</small>
+                <small className="text-light">{t('experience.level2')}</small>
               </div>
             </article>
             <article className="experience_details">
@@ -97,8 +99,8 @@ const Experience = () => {
                 alt="dotnet"
               />
               <div>
-                <h4>.Net Framework</h4>
-                <small className="text-light">Intermediate</small>
+                <h4>.Net</h4>
+                <small className="text-light">{t('experience.level2')}</small>
               </div>
             </article>
 
@@ -110,7 +112,7 @@ const Experience = () => {
               />
               <div>
                 <h4>PostgreSQL</h4>
-                <small className="text-light">Intermediate</small>
+                <small className="text-light">{t('experience.level2')}</small>
               </div>
             </article>
             <article className="experience_details">
@@ -121,14 +123,14 @@ const Experience = () => {
               />
               <div>
                 <h4>FireBase</h4>
-                <small className="text-light">Intermediate</small>
+                <small className="text-light">{t('experience.level2')}</small>
               </div>
             </article>
             <article className="experience_details">
               <img src={node} className="experience_details-icon" alt="node" />
               <div>
                 <h4>Node.js</h4>
-                <small className="text-light">Beginner</small>
+                <small className="text-light">{t('experience.level3')}</small>
               </div>
             </article>
             <article className="experience_details">
@@ -139,7 +141,7 @@ const Experience = () => {
               />
               <div>
                 <h4>Laravel</h4>
-                <small className="text-light">Beginner</small>
+                <small className="text-light">{t('experience.level3')}</small>
               </div>
             </article>
           </div>

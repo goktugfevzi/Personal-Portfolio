@@ -28,52 +28,46 @@ const Nav = () => {
     };
   }, []);
 
-  const handleClick = (sectionId) => {
-    setActiveNav(sectionId);
-    const section = document.querySelector(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+  const handleClick = (e, sectionId) => {
+    e.preventDefault();
+  
+    if (sectionId === "#") {
+      setActiveNav(sectionId);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      const section = document.querySelector(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+        setActiveNav(sectionId);
+      }
     }
   };
-
   return (
     <nav>
       <a
-        href="/"
-        onClick={(e) => {
-          e.preventDefault();
-          handleClick("#");
-        }}
+        href="#"
+        onClick={(e) => handleClick(e, "#")}
         className={activeNav === "#" ? "active" : ""}
       >
         <FaHome />
       </a>
       <a
         href="#about"
-        onClick={(e) => {
-          e.preventDefault();
-          handleClick("#about");
-        }}
+        onClick={(e) => handleClick(e, "#about")}
         className={activeNav === "#about" ? "active" : ""}
       >
         <FaUser />
       </a>
       <a
         href="#experience"
-        onClick={(e) => {
-          e.preventDefault();
-          handleClick("#experience");
-        }}
+        onClick={(e) => handleClick(e, "#experience")}
         className={activeNav === "#experience" ? "active" : ""}
       >
         <FaBook />
       </a>
       <a
         href="#project"
-        onClick={(e) => {
-          e.preventDefault();
-          handleClick("#project");
-        }}
+        onClick={(e) => handleClick(e, "#project")}
         className={activeNav === "#project" ? "active" : ""}
       >
         <FaProjectDiagram />
@@ -81,10 +75,7 @@ const Nav = () => {
     
       <a
         href="#contact"
-        onClick={(e) => {
-          e.preventDefault();
-          handleClick("#contact");
-        }}
+        onClick={(e) => handleClick(e, "#contact")}
         className={activeNav === "#contact" ? "active" : ""}
       >
         <AiFillMessage />

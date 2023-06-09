@@ -3,8 +3,10 @@ import emailjs from "emailjs-com";
 import "./contact.css";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [isSuccess, setIsSuccess] = useState(false);
   const form = useRef();
 
@@ -41,8 +43,8 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact">
-      <h5 className="h5">Get in Touch</h5>
-      <h2>Contact Me</h2>
+      <h5 className="h5">{t("contact.title")}</h5>
+      <h2>{t("contact.title2")}</h2>
       <div className="container contact_container">
         <div className="contact_options">
           <article
@@ -53,13 +55,13 @@ const Contact = () => {
           >
             <MdEmail className="contact_option-icon" />
             <h4>Email</h4>
-            <h5>goktugfevziozcelik@gmail.com</h5>
+            <h5 >goktugfevziozcelik@gmail.com</h5>
             <a
               href="mailto:goktugfevziozcelik@gmail.com"
               target="_blank"
               rel="noreferrer"
             >
-              Send a message
+              {t("contact.content1")}
             </a>
           </article>
           <article
@@ -78,7 +80,7 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Send connection request
+              {t("contact.content2")}
             </a>
           </article>
           <article
@@ -97,26 +99,31 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Send follow request
+              {t("contact.content3")}
             </a>
           </article>
         </div>
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="name" placeholder="Full Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
+          <input
+            type="text"
+            name="name"
+            placeholder={t("contact.placeholder1")}
+            required
+          />
+          <input type="email" name="email" placeholder={t("contact.placeholder2")} required />
           <textarea
             name="message"
             rows="7"
-            placeholder="Type your message"
+            placeholder={t("contact.placeholder3")}
             required
           ></textarea>
           <button type="submit" className="btn btn-primary">
-            Send Message
+            {t("contact.content4")}
           </button>
         </form>
         {isSuccess && (
           <div className={`success-message ${isSuccess ? "show" : ""}`}>
-            Your message has been sent successfully.
+            {t("contact.success-message")}
           </div>
         )}
       </div>

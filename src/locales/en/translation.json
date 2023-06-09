@@ -1,0 +1,52 @@
+{
+  "header": {
+    "hello": "Hello I'm",
+    "name": "Göktuğ Fevzi Özçelik",
+    "profession": "Full-stack Developer",
+    "scrollDown": "Scroll Down",
+    "DownloadCv": "Download CV",
+    "LetsTalk": "Let's Talk",
+    "cv":"../../assets/cv_en.pdf"
+  },
+  "about": {
+    "title2":"Get To Know",
+    "title": "About Me",
+    "content1": "My name is GökTug Fevzi Özçelik, and I am 24 years old. I am a student at Erciyes University, studying Computer Engineering. Throughout my academic journey, I have had the opportunity to be involved in various projects in the fields of artificial intelligence, web programming, mobile programming, and game programming.",
+    "content2": "Currently, I am capable of designing websites, writing backend code, and working with databases. Additionally, I develop applications for the Google Play Store.",
+    "content3": "I had the chance to intern at Iotech, where I completed tasks related to .Net and React. In the upcoming months, as part of the Erasmus+ Internship program, I will be interning at Rulmenti S.A company in Romania. Following that, I will complete my mandatory internship at Turkish Aerospace Industries, Inc. and graduate from my department.",
+    "seeProjects": "See my projects"
+  },
+  "experience":{
+    "title":"What Skills I Have",
+    "title2":"My Skills",
+    "category1":"Frontend Development",
+    "category2":"Backend Development",
+    "level1":"Experienced",
+    "level2":"Intermediate",
+    "level3":"Beginner"
+  },
+  "portfolio":{
+    "title":"My Recent Work",
+    "title2":"Portfolio"
+  },
+  "contact":{
+    "title":"Get in Touch",
+    "title2":"Contact Me",
+    "content1":"Send a message",
+    "content2":"Send connection request",
+    "content3":"Send follow request",
+    "placeholder1":"Full Name",
+    "placeholder2":"Your Email",
+    "placeholder3":"Type your message",
+    "content4":"Send Message",
+    "success-message":"Your message has been sent successfully."
+  },
+  "footer":{
+    "menu1":"About",
+    "menu2":"Experience",
+    "menu3":"Projects",
+    "menu4":"Contact",
+    "content1":"Goktug Fevzi Ozcelik Portfolio. All rights reserved."
+  }
+
+}

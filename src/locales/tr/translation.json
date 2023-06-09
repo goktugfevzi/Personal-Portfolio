@@ -1,0 +1,51 @@
+{
+  "header": {
+    "hello": "Merhaba Ben",
+    "name": "Göktuğ Fevzi Özçelik",
+    "profession": "Full-stack Geliştirici",
+    "scrollDown": "Aşağı Kaydır",
+    "DownloadCv": "Özgeçmiş İndir",
+    "LetsTalk": "Temasa Geç",
+    "cv":"../../assets/cv_tr.pdf"
+  },
+  "about": {
+    "title2": "Bilmeniz Gerekenler",
+    "title": "Hakkımda",
+    "content1": "Ben Göktug Fevzi Özçelik, 24 yaşındayım. Erciyes Üniversitesi'nde Bilgisayar Mühendisliği bölümünde öğrenciyim. Öğrenim hayatım boyunca yapay zeka, web programlama, mobil programlama ve oyun programlama gibi birçok alanda deneyim kazanma fırsatı buldum.",
+    "content2": "Şu anda web sitesi tasarımı, backend yazımı ve veritabanı yazımı gibi işlemleri yapabiliyorum. Ayrıca Google Play Store için uygulamalar geliştiriyorum. Yazılım geliştirme alanında uzun yıllardır heyecanımı kaybetmeden çalışıyorum.",
+    "content3": "Iotech şirketinde staj yapma fırsatı buldum ve .Net ve React ile ilgili görevler gerçekleştirdim. Önümüzdeki aylarda Erasmus+ Internship programı kapsamında Romanya'da Rulmenti S.A şirketinde staj yapacağım ve ardından Türk Havacılık ve Uzay Sanayii A.Ş'de zorunlu stajımı tamamlayarak bölümümden mezun olacağım.",
+    "seeProjects": "Projelerim"
+  },
+  "experience": {
+    "title": "Sahip olduğum Beceriler",
+    "title2": "Yeteneklerim",
+    "category1": "Frontend Geliştirme",
+    "category2": "Backend Geliştirme",
+    "level1": "Tecrübeli",
+    "level2": "Orta Seviye",
+    "level3": "Başlangıç"
+  },
+  "portfolio": {
+    "title": "Son Çalışmalarım",
+    "title2": "Portföy"
+  },
+  "contact": {
+    "title": "Temasta olmak için",
+    "title2": "Benimle irtibata geçin",
+    "placeholder1":"İsminiz..",
+    "placeholder2":"Email Adresiniz..",
+    "placeholder3":"Mesajınız..",
+    "content1": "Bir mesaj yaz",
+    "content2": "Bağlantı isteği gönder",
+    "content3": "Takip isteği gönder",
+    "content4": "Mesaj Gönder",
+    "success-message": "Mesajın başarıyla gönderildi."
+  },
+  "footer":{
+    "menu1":"Hakkında",
+    "menu2":"Yetenekler",
+    "menu3":"Projeler",
+    "menu4":"İletişim",
+    "content1":"Göktuğ Fevzi Özçelik Portföy. Her hakkı saklıdır."
+  }
+}

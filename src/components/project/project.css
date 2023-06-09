@@ -105,16 +105,12 @@
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
   }
-  .project_item-details {
-    top: 60%;
-  }
+ 
 }
 @media screen and (max-width: 600px) {
   .project_container {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  .project_item-details {
-    top: 60%;
-  }
+
 }

@@ -9,6 +9,31 @@ header {
   height: 100%;
   position: relative;
 }
+
+.language_buttons {
+  top: -5rem;
+  position: absolute;
+  right: 2rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.language_buttons button {
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.language_buttons button img {
+  filter: brightness(0.7);
+  width: 24px;
+  height: 24px;
+}
+
+.language_buttons button.active img {
+  filter: brightness(1.2);
+}
 /*_______________CTA________________*/
 .cta {
   margin-top: 2.5rem;
@@ -27,34 +52,32 @@ header {
   bottom: 3rem;
 }
 
-.header_socials::after{
-  content:"";
+.header_socials::after {
+  content: "";
   width: 1px;
   height: 2rem;
   background: var(--color-primary);
 }
 
-
 .me {
-  background: linear-gradient(var(--color-primary),transparent);
+  background: linear-gradient(var(--color-primary), transparent);
   width: 22rem;
   height: 30rem;
   position: absolute;
   left: calc(50% - 11rem);
   margin-top: 4rem;
   border-radius: 12rem 12rem 0 0;
-  overflow: hidden;
   padding: 5rem 1.5rem 1.5rem 1.5rem;
   display: flex;
-  align-items: flex-end; 
+  align-items: flex-end;
 }
 .me img {
-  width: auto; 
-  height: 125%; 
+  width: auto;
+  height: 125%;
   object-fit: cover;
-  object-position: center top; 
+  object-position: center top;
   margin-top: -2rem;
-  margin-left: 1.5rem; 
+  margin-left: 1.5rem;
 }
 .scroll_down {
   position: absolute;
@@ -65,19 +88,18 @@ header {
   font-size: 0.9rem;
 }
 
-
-
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
   header {
-    height: 100vh;
+    height: 68vh;
   }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
   header {
     height: 100vh;
   }
-  .header_socials, .scroll_down {
+  .header_socials,
+  .scroll_down {
     display: none;
   }
 }
