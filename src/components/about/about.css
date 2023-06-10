@@ -54,6 +54,8 @@
   .about_content {
     text-align: center;
     font-size: large;
+    margin: auto;
+    width: 95%;
   }
 }
 
@@ -68,6 +70,8 @@
   }
 
   .about_content {
+    margin: auto;
+    width: 95%;
     text-align: center;
   }
 

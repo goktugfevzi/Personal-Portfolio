@@ -102,7 +102,11 @@
   }
 }
 @media screen and (max-width: 600px) {
-
+.project_item{
+    width: 95%;
+    margin: auto;
+  
+}
   .project_container {
     grid-template-columns: 1fr;
     gap: 1rem;
