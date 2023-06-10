@@ -1,15 +1,19 @@
 .experience_container {
   display: grid;
   grid-template-columns: 50% 50%;
-  gap: 3%;
+  gap: 4%;
 }
 .experience {
   height: 71%;
+}
 
+.experience_frontend {
+  display: grid;
+  justify-items: center;
 }
 .experience_container > div {
   background: var(--color-bg-variant);
-  padding: 2.4rem 5rem;
+  padding: 2.4rem 4rem;
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
@@ -34,6 +38,7 @@
 }
 
 .experience_details {
+  margin-right: 2rem;
   display: flex;
   gap: 1rem;
 }
@@ -62,7 +67,6 @@
 }
 
 @media screen and (max-width: 600px) {
-
   .experience_container {
     gap: 1rem;
   }
