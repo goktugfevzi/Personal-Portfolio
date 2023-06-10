@@ -78,7 +78,7 @@ const Experience = () => {
             </article>
           </div>
         </div>
-        <div className="experience_backend">
+        <div className="experience_frontend">
           <h3>{t('experience.category2')}</h3>
           <div className="experience_content">
             <article className="experience_details">
