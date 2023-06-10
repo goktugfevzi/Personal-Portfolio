@@ -30,8 +30,6 @@ const Contact = () => {
         }
       );
     e.target.reset();
-
-    // Başarılı mesajını 3 saniye sonra gizlemek için
     setTimeout(() => {
       setIsSuccess(false);
     }, 3000);
@@ -43,7 +41,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact">
-      <h5 className="h5">{t("contact.title")}</h5>
+      <h5 className="h5text">{t("contact.title")}</h5>
       <h2>{t("contact.title2")}</h2>
       <div className="container contact_container">
         <div className="contact_options">
@@ -125,12 +123,12 @@ const Contact = () => {
           <button type="submit" className="btn btn-primary">
             {t("contact.content4")}
           </button>
+          {isSuccess && (
+            <div className={`success-message show`}>
+              {t("contact.success-message")}
+            </div>
+          )}
         </form>
-        {isSuccess && (
-          <div className={`success-message ${isSuccess ? "show" : ""}`}>
-            {t("contact.success-message")}
-          </div>
-        )}
       </div>
     </section>
   );

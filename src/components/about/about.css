@@ -1,9 +1,14 @@
 .about_container {
   display: grid;
+  position: relative;
+  height: 100%;
   grid-template-columns: 35% 50%;
   gap: 15%;
 }
-
+.about {
+  height: 100%;
+  overflow: hidden;
+}
 .about_me {
   width: 100%;
   aspect-ratio: 1/1;
@@ -28,32 +33,35 @@
   transform: rotate(0);
 }
 
-
-
 .about_content p {
-  margin: 2rem 0 2.6rem;
+  margin: 1rem 0 2.6rem;
   color: var(--color-light);
 }
 
 @media screen and (max-width: 1024px) {
+  .about {
+    height: 100%;
+  }
   .about_container {
     grid-template-columns: 1fr;
     gap: 0;
   }
 
   .about_me {
-    width: 50%;
-    margin: 2rem auto 4rem;
+    width: 40%;
+    margin: auto;
   }
-
-  .about_content p {
-    margin: 1rem 0 1.5rem;
+  .about_content {
+    text-align: center;
+    font-size: large;
   }
 }
 
 /*===== Media Query(Mobile)===*/
 @media screen and (max-width: 600px) {
-
+  .about {
+    height: 100%;
+  }
   .about_me {
     width: 65%;
     margin: 0 auto 3rem;

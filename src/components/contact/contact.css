@@ -1,5 +1,6 @@
 .contact {
-  margin-top: 12rem;
+  height: 100%;
+  overflow: hidden;
 }
 
 .container.contact_container {
@@ -18,14 +19,9 @@
 
 .success-message {
   background-color: green;
-  color: white;
+  color: var(--color-white);
   padding: 10px;
-  margin-top: 1rem;
   display: inline-block;
-  position: absolute;
-  bottom: -3rem;
-  left: 0;
-  right: 0;
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
@@ -37,7 +33,6 @@
 .success-message.show {
   opacity: 1;
 }
-
 .contact_option {
   background: var(--color-bg-variant);
   padding: 1.2rem;
@@ -85,16 +80,20 @@ textarea {
 }
 
 @media screen and (max-width: 1024px) {
+  .contact {
+    height: 100%;
+  }
   .container.contact_container {
-    margin-top: 50%;
     grid-template-columns: 1fr;
     gap: 2rem;
   }
 }
 
 @media screen and (max-width: 600px) {
+  .contact {
+    height: 100%;
+  }
   .container.contact_container {
-    margin-top: 350%;
     width: var(--container-width-sm);
   }
 }

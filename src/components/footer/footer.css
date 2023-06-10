@@ -55,7 +55,8 @@ footer a {
 }
 @media screen and (max-width: 1024px) {
   .footer {
-    margin-top: 100%;
+    border-top-left-radius: 6rem;
+    border-top-right-radius: 6rem;
     width: var(--container-width-sm);
   }
 }
@@ -63,7 +64,6 @@ footer a {
   .footer {
     border-top-left-radius: 5rem;
     border-top-right-radius: 5rem;
-    margin-top: 500%;
     width: var(--container-width-sm);
   }
   .permalinks {

@@ -1,13 +1,12 @@
-.project {
-  margin-top: -3.5rem;
-}
-
 .project_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
+  gap: 3%;
+  position: relative;
 }
-
+.project {
+  height: 100%;
+}
 .project_item {
   position: relative;
   background: var(--color-bg-variant);
@@ -63,7 +62,6 @@
   font-weight: bold;
   font-size: x-large;
   margin-bottom: 0.5rem;
-  margin-top: -1.5rem;
 }
 
 .project_item-icon {
@@ -98,19 +96,15 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .project {
-    margin-top: 15rem;
-  }
   .project_container {
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
   }
- 
 }
 @media screen and (max-width: 600px) {
+
   .project_container {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-
 }

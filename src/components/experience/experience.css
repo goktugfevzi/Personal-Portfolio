@@ -1,10 +1,12 @@
 .experience_container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-bottom: 4rem;
+  grid-template-columns: 50% 50%;
+  gap: 3%;
 }
+.experience {
+  height: 71%;
 
+}
 .experience_container > div {
   background: var(--color-bg-variant);
   padding: 2.4rem 5rem;
@@ -60,9 +62,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .experience {
-    margin-top: 250%;
-  }
+
   .experience_container {
     gap: 1rem;
   }
