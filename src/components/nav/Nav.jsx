@@ -30,18 +30,22 @@ const Nav = () => {
 
   const handleClick = (e, sectionId) => {
     e.preventDefault();
-  
-    if (sectionId === "#") {
+
+    if (activeNav !== sectionId) {
       setActiveNav(sectionId);
+    }
+
+    if (sectionId === "#") {
       window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
       const section = document.querySelector(sectionId);
       if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
-        setActiveNav(sectionId);
+        const offsetTop = section.offsetTop + 5; // Ekleme: 20 piksel offset
+        window.scrollTo({ top: offsetTop, behavior: "smooth" });
       }
     }
   };
+
   return (
     <nav>
       <a
@@ -72,9 +76,9 @@ const Nav = () => {
       >
         <FaProjectDiagram />
       </a>
-    
+
       <a
-        href="#contact"
+        href="/#contact"
         onClick={(e) => handleClick(e, "#contact")}
         className={activeNav === "#contact" ? "active" : ""}
       >

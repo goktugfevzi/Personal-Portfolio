@@ -70,8 +70,15 @@
   .experience_container {
     gap: 1rem;
   }
+  .experience_details {margin-right: 1rem;}
+  .experience_details-icon {
+    height: 2rem;
+  }
   .experience_container > div {
     width: 95%;
     padding: 2rem 1rem;
+  }
+  .h4text{
+    font-size: 15px;
   }
 }
