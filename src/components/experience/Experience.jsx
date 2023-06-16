@@ -4,11 +4,11 @@ import js from "../../assets/js.png";
 import react from "../../assets/react.png";
 import csharp from "../../assets/c-sharp.png";
 import reactnative from "../../assets/reactnative.png";
-import node from "../../assets/node.png";
+import redis from "../../assets/redis.png";
 import postgr from "../../assets/postgresql.png";
 import dotnet from "../../assets/dotnet.png";
 import firebase from "../../assets/firebase.png";
-import laravel from "../../assets/laravel.png";
+import docker from "../../assets/docker.png";
 import redux from "../../assets/redux.png";
 import ts from "../../assets/ts.png";
 import vue from "../../assets/vue.png";
@@ -127,20 +127,20 @@ const Experience = () => {
               </div>
             </article>
             <article className="experience_details">
-              <img src={node} className="experience_details-icon" alt="node" />
+              <img src={redis} className="experience_details-icon" alt="node" />
               <div>
-                 <h4 className="h4text">Node.js</h4>
+                 <h4 className="h4text">Redis</h4>
                 <small className="text-light">{t('experience.level3')}</small>
               </div>
             </article>
             <article className="experience_details">
               <img
-                src={laravel}
+                src={docker}
                 className="experience_details-icon"
                 alt="laravel"
               />
               <div>
-                 <h4 className="h4text">Laravel</h4>
+                 <h4 className="h4text">Docker</h4>
                 <small className="text-light">{t('experience.level3')}</small>
               </div>
             </article>
