@@ -18,15 +18,30 @@ It has been designed to be responsive and compatible with various devices.
 
 Clone/download this repository into your computer:
 
-`git clone https://github.com/goktugfevzi/Personal-Portfolio.git`
+```sh
+git clone https://github.com/goktugfevzi/Personal-Portfolio.git
+```
 
 Go into the folder where you cloned/downloaded and run:
 
-`npm install`
+```sh
+npm install
+```
 
-To open the expo server, just run:
+Sign Up [EmailJS](https://www.emailjs.com/)  and create your account.
+Then create .env file at Home Directory and write this inside .env
 
-`npm start`
+```sh
+REACT_APP_SERVICE_ID=Your Service ID
+REACT_APP_TEMPLATE_ID=Your Template ID
+REACT_APP_USER_ID=Your User ID
+```
+
+Just run:
+
+```sh
+npm start
+```
 
 ## License
 Thanks My Mom
