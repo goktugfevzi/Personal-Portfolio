@@ -1,5 +1,4 @@
 header {
-  height: 100vh;
   padding-top: 7rem;
   overflow: hidden;
 }
@@ -58,44 +57,34 @@ header {
   gap: 1.2rem;
   justify-content: center;
 }
-/*___________________HEADER SOCIALS______________*/
+
 .header_socials {
+  padding-top: 2rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.8rem;
-  position: absolute;
-  left: 0;
-  bottom: 3rem;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 24px; 
+
 }
 
-.header_socials::after {
-  content: "";
-  width: 1px;
-  height: 2rem;
+.header_socials a {
+  display: flex;
+   border: 1px solid var(--color-primary);
+  border-radius: 0.7rem;
+  padding: 0.8rem;
+  color: var(--color-white);
+  background: transparent; 
+}
+
+.header_socials a:hover {
   background: var(--color-primary);
+  color: var(--color-bg);
+  border-color: var(--color-bg);
 }
 
-.me {
-  background: linear-gradient(var(--color-primary), transparent);
-  width: 22rem;
-  height: 30rem;
-  position: absolute;
-  left: calc(50% - 11rem);
-  margin-top: 4rem;
-  border-radius: 12rem 12rem 0 0;
-  padding: 5rem 1.5rem 1.5rem 1.5rem;
-  display: flex;
-  align-items: flex-end;
-}
-.me img {
-  width: auto;
-  height: 125%;
-  object-fit: cover;
-  object-position: center top;
-  margin-top: -2rem;
-  margin-left: 1.5rem;
-}
+/*___________________HEADER SOCIALS______________*/
+
+
 .scroll_down {
   position: absolute;
   right: -2.3rem;
@@ -106,16 +95,15 @@ header {
 }
 
 @media screen and (max-width: 1024px) {
-  header {
+  /* header {
     height: 68vh;
-  }
+  } */
 }
 
 @media screen and (max-width: 600px) {
-  header {
-    height: 100vh;
-  }
-  .header_socials,
+  /* header {
+    height: %;
+  } */
   .scroll_down {
     display: none;
   }

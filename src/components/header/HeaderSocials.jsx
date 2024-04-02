@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaMedium } from "react-icons/fa";
 
 const HeaderSocials = () => {
   return (
@@ -15,11 +15,11 @@ const HeaderSocials = () => {
         <FaGithub />
       </a>
       <a
-        href="https://www.instagram.com/goktug.fevzi/"
+        href="https://medium.com/@goktugfevziozcelik"
         target="_blank"
         rel="noreferrer"
       >
-        <FaInstagram />
+        <FaMedium />
       </a>
     </div>
   );

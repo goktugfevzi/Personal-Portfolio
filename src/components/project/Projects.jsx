@@ -3,11 +3,11 @@ import { useState } from "react";
 import {BsGithub} from "react-icons/bs"
 import "./project.css";
 import IMG1 from "../../assets/portfolio1.png";
-import IMG2 from "../../assets/portfolio2.png";
+import IMG2 from "../../assets/whatswebsite.png";
 import IMG3 from "../../assets/portfolio3.png";
 import IMG4 from "../../assets/portfolio4.png";
 import IMG5 from "../../assets/portfolio5.png";
-import IMG6 from "../../assets/portfolio6.png";
+import IMG6 from "../../assets/tcdd.png";
 import { useTranslation } from "react-i18next";
 
 
@@ -22,23 +22,23 @@ const projects = [
   {
     id: 2,
     image: IMG2,
-    title: "Personnel Tracking App",
-    github: "https://github.com/goktugfevzi/EmployerWebsite",
-    category: "Full-Stack Website",
+    title: "WhatsWebsite",
+    github: "https://github.com/goktugfevzi/WhatsWebsite",
+    category: "Full Stack",
   },
   {
     id: 3,
     image: IMG3,
-    title: "Flag Game Website",
-    github: "https://github.com/goktugfevzi/FlagGame",
-    category: "Frontend",
+    title: "EnterScoreX",
+    github: "https://github.com/goktugfevzi/EnterScoreX",
+    category: "Full Stack",
   },
   {
     id: 4,
     image: IMG4,
-    title: "Sports Match App",
-    github: "https://github.com/goktugfevzi/SportsMatch",
-    category: "Mobile Application",
+    title: "Bank App",
+    github: "https://github.com/goktugfevzi/BankAPI",
+    category: "Full Stack",
   },
   {
     id: 5,
@@ -50,9 +50,9 @@ const projects = [
   {
     id: 6,
     image: IMG6,
-    title: "Allah Tuttugunu Altin Etsin",
-    github: "https://github.com/goktugfevzi/Allah-Tuttugunu-Altin-Etsin",
-    category: "Mobile Application",
+    title: "Bilet Varmı(Tcdd Bilet Botu)",
+    github: "https://github.com/goktugfevzi/BiletVarmi",
+    category: "Backend",
   },
 ];
 

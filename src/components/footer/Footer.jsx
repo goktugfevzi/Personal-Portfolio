@@ -6,10 +6,12 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-
+import { useNavigate } from "react-router-dom";
+import eses from "../../assets/eses.png"
 
 const Footer = () => {
   const { t } = useTranslation();
+const navigate = useNavigate();
 
   return (
     <footer className="footer">
@@ -28,21 +30,25 @@ const Footer = () => {
           <a href="#contact">{t("footer.menu4")}</a>
         </li>
       </ul>
-      <div className="footer_socials">
-        <a href="https://www.linkedin.com/in/goktugfevziozcelik/">
-          <FaLinkedin />
-        </a>
-        <a href="https://www.instagram.com/goktug.fevzi/">
-          <FaInstagram />
-        </a>
-        <a href="https://github.com/goktugfevzi">
-          <FaGithub />
-        </a>
-     
-      </div>
+      <div class="footer_socials">
+  <a href="https://www.linkedin.com/in/goktugfevziozcelik/" className="footer_socials_icon">
+    <FaLinkedin />
+  </a>
+  <a href="https://www.instagram.com/goktug.fevzi/" className="footer_socials_icon">
+    <FaInstagram />
+  </a>
+  <a href="https://github.com/goktugfevzi" className="footer_socials_icon">
+    <FaGithub />
+  </a>
+  <button onClick={() => navigate('/biletvarmi')} className="footer_socials_text">
+    Bilet Varmı?
+  </button>
+
+</div>
       <div className="footer_copyright">
         <small>&copy; {t("footer.content1")}</small>
       </div>
+  <img class="esesImg" src={eses} alt="Eses Image" />
     </footer>
   );
 };

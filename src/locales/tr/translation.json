@@ -1,26 +1,48 @@
 {
   "header": {
-    "hello": "Merhaba Ben",
+    "hello": "Ben",
     "name": "Göktuğ Fevzi Özçelik",
-    "profession": "Full-stack Geliştirici",
+    "profession": "Full stack Geliştirici",
     "scrollDown": "Aşağı Kaydır",
     "DownloadCv": "Özgeçmiş İndir",
     "LetsTalk": "Temasa Geç",
-    "cv":"../../assets/cv_tr.pdf"
+    "cv": "../../assets/cv_tr.pdf"
   },
   "about": {
     "title2": "Bilmeniz Gerekenler",
     "title": "Hakkımda",
-    "content1": "Ben Göktug Fevzi Özçelik, 24 yaşındayım. Erciyes Üniversitesi'nde Bilgisayar Mühendisliği bölümünde öğrenciyim. Öğrenim hayatım boyunca yapay zeka, web programlama, mobil programlama ve oyun programlama gibi birçok alanda deneyim kazanma fırsatı buldum.",
-    "content2": "Şu anda web sitesi tasarımı, backend yazımı ve veritabanı yazımı gibi işlemleri yapabiliyorum. Ayrıca Google Play Store için uygulamalar geliştiriyorum. Yazılım geliştirme alanında uzun yıllardır heyecanımı kaybetmeden çalışıyorum.",
-    "content3": "Iotech şirketinde staj yapma fırsatı buldum ve .Net ve React ile ilgili görevler gerçekleştirdim. Önümüzdeki aylarda Erasmus+ Internship programı kapsamında Romanya'da Rulmenti S.A şirketinde staj yapacağım ve ardından Türk Havacılık ve Uzay Sanayii A.Ş'de zorunlu stajımı tamamlayarak bölümümden mezun olacağım.",
+    "content1": "Merhaba! Ben Göktuğ Fevzi Özçelik, 25 yaşındayım. Erciyes Üniversitesi Bilgisayar Mühendisliği mezunuyum. Öğrenim hayatım boyunca yapay zeka, web programlama, mobil programlama ve oyun programlama gibi birçok alanda deneyim kazanma fırsatı buldum.",
+    "content2": ".Net teknolojisi kullanarak projeler geliştiriyorum ve bu projelerde çeşitli ORM araçları, farklı tasarım desenleri ve farklı mimari yaklaşımlar kullanıyorum. Hem ilişkisel veritabanları hem de NoSQL veritabanlarıyla çalışma deneyimim bulunuyor. Ayrıca, bulut depolama hizmetlerini kullanarak projelerimi optimize ediyor ve bu konuda makaleler yazıyorum.",
+    "content3": "React ve Angular ile projelerimin arayüzünü oluşturuyorum. React Native kullanarak mobil uygulamalar da geliştirdim ve bunlardan birisi Google Play Store'da aktif olarak kullanılmaktadır.",
+    "content4": "Iotech şirketinde staj yaparak .Net ve React ile proje geliştirdim. Türk Havacılık ve Uzay Sanayii A.Ş'de ikinci zorunlu stajımı yaptım ve şuanda Dışişleri Bakanlığı bünyesinde ARD Grup Holding AŞ bünyesinde çalışıyorum.",
     "seeProjects": "Projelerim"
+  },
+  "work_experience": {
+    "title": "Şuana Kadar Neler Yaptım",
+    "title2": "Tecrübelerim",
+    "description1": ".NET Core ve Angular kullanarak geliştirme yapıyorum. Dijital dönüşüm kapsamındaki projelerimizde Docker, Redis, RabbitMQ, ElasticSearch, PostgreSql gibi yenilikçi yaklaşımlar ile Onion ve N-Tier Arch. kullanmaktayız.",
+    "date1": "Ocak 2024 - Halen",
+    "location1": "Ankara, Türkiye",
+    "company1": "Dışişleri Bakanlığı",
+    "jobTitle1": "Yazılım Mühendisi",
+
+    "description2": "DevExpress ve MaterialUI kullanarak React ile bir servisin arayüzünü geliştirdim. Bu uygulama şirket içinde kullanılacaktır.",
+    "date2": "Ağustos 2023 - Eylül 2023",
+    "location2": "Ankara, Türkiye",
+    "company2": "TAI",
+    "jobTitle2": "Yazılım Mühendisi Stajyeri",
+
+    "description3": ".NET Core, React (TypeScript) ve PostgreSQL kullanarak bir Full Stack Website geliştirdim. Ayrıca WPF ile bir TCP Server Client uygulaması da geliştirdim",
+    "date3": "Nisan 2023 - Mayıs 2023",
+    "location3": "Eskişehir, Türkiye",
+    "company3": "IOTech",
+    "jobTitle3": "Yazılım Mühendisi Stajyeri"
   },
   "experience": {
     "title": "Sahip olduğum Beceriler",
     "title2": "Yeteneklerim",
-    "category1": "Frontend Geliştirme",
-    "category2": "Backend Geliştirme",
+    "category1": "Altyapı ve Araçlar Yığını",
+    "category2": "Geliştirme Teknolojileri Yığını",
     "level1": "Tecrübeli",
     "level2": "Orta Seviye",
     "level3": "Başlangıç"
@@ -32,20 +54,20 @@
   "contact": {
     "title": "Temasta olmak için",
     "title2": "Benimle irtibata geçin",
-    "placeholder1":"İsminiz..",
-    "placeholder2":"Email Adresiniz..",
-    "placeholder3":"Mesajınız..",
+    "placeholder1": "İsminiz..",
+    "placeholder2": "Email Adresiniz..",
+    "placeholder3": "Mesajınız..",
     "content1": "Bir mesaj yaz",
     "content2": "Bağlantı isteği gönder",
     "content3": "Takip isteği gönder",
     "content4": "Mesaj Gönder",
     "success-message": "Mesajın başarıyla gönderildi."
   },
-  "footer":{
-    "menu1":"Hakkında",
-    "menu2":"Yetenekler",
-    "menu3":"Projeler",
-    "menu4":"İletişim",
-    "content1":"Göktuğ Fevzi Özçelik Portföy. Her hakkı saklıdır."
+  "footer": {
+    "menu1": "Hakkında",
+    "menu2": "Yetenekler",
+    "menu3": "Projeler",
+    "menu4": "İletişim",
+    "content1": "Göktuğ Fevzi Özçelik Portföy. Hakkıdır Hakk'a Tapan Milletimin İstiklal!"
   }
 }

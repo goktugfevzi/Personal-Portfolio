@@ -7,7 +7,25 @@ footer {
   border-top-left-radius: 7rem;
   border-top-right-radius: 7rem;
 }
+.footer_socials:hover .esesImg {
+  display: block; /* Show image on hover */
+}
 
+.esesImg {
+  height: 40px;
+  width: 40px;
+  opacity: 1; /* Initially hide the image */
+  filter: brightness(0.1);
+  width: 40px;
+  height: 40px;
+  transition: filter 0.3s ease;
+}
+
+.esesImg:hover  {
+  display: block; /* Show image on hover */
+  filter: brightness(0.9);
+
+}
 footer a {
   color: var(--color-bg);
 }
@@ -33,7 +51,6 @@ footer a {
   gap: 1rem;
   margin-bottom: 2rem;
 }
-
 .footer_socials a {
   display: flex;
   border: 1px solid transparent;
@@ -42,7 +59,25 @@ footer a {
   color: var(--color-white);
   background: var(--color-bg);
 }
-
+.footer_socials_icon {
+  font-size: 16px;
+}
+.footer_socials_text {
+  transition: var(--transition);
+  font-size: 13px;
+  cursor: pointer;
+  display: flex;
+  border: 1px solid transparent;
+  border-radius: 0.7rem;
+  padding: 0.8rem;
+  color: var(--color-white);
+  background: var(--color-bg);
+}
+.footer_socials_text:hover {
+  background: transparent;
+  color: var(--color-bg);
+  border-color: var(--color-bg);
+}
 .footer_socials a:hover {
   background: transparent;
   color: var(--color-bg);

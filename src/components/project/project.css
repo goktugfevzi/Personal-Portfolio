@@ -89,6 +89,7 @@
 
 .project_item-title {
   color: var(--color-primary);
+  margin-top: 5%;
 }
 
 .project_item-cta {

@@ -24,6 +24,9 @@ const About = () => {
             <br />
             <br />
             {t("about.content3")}
+            <br />
+            <br />
+            {t("about.content4")}
           </p>
           <a href="#project" className="btn btn-primary">
             {t("about.seeProjects")}

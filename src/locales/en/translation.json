@@ -2,7 +2,7 @@
   "header": {
     "hello": "Hello I'm",
     "name": "Göktuğ Fevzi Özçelik",
-    "profession": "Full-stack Developer",
+    "profession": "Full stack Developer",
     "scrollDown": "Scroll Down",
     "DownloadCv": "Download CV",
     "LetsTalk": "Let's Talk",
@@ -11,16 +11,41 @@
   "about": {
     "title2":"Get To Know",
     "title": "About Me",
-    "content1": "I'm Goktug Fevzi Ozcelik, 24 years old. I am a student at Erciyes University, studying Computer Engineering. Throughout my academic journey, I have had the opportunity to be involved in various projects in the fields of artificial intelligence, web programming, mobile programming, and game programming.",
-    "content2": "Currently, I am capable of designing websites, writing backend code, and working with databases. Additionally, I develop applications for the Google Play Store.",
-    "content3": "I had the chance to intern at Iotech, where I completed tasks related to .Net and React. In the upcoming months, as part of the Erasmus+ Internship program, I will be interning at Rulmenti S.A company in Romania. Following that, I will complete my mandatory internship at Turkish Aerospace Industries, Inc. and graduate from my department.",
+    "content1": "Hello! I'm Göktuğ Fevzi Özçelik, 24 years old. I graduated from Erciyes University with a degree in Computer Engineering. Throughout my academic journey, I had the opportunity to gain experience in various fields such as artificial intelligence, web programming, mobile programming, and game development.",
+    "content2": "I develop projects using .NET technology and utilize various ORM tools, different design patterns, and different architectural approaches in these projects. I have experience working with both relational databases and NoSQL databases. Additionally, I optimize my projects using cloud storage services and write articles on this topic. I also get the chance to experience different tools for project management.",
+    "content3": "I create project interfaces using React. I have also developed mobile applications using React Native, and one of them is actively used in the Google Play Store.",
+    "content4": "I undertook tasks related to .NET and React during my internship at Iotech company. I completed my second mandatory internship at Turkish Aerospace Industries, Inc. (TAI) and developed a service interface. This project is planned to be used at TAI.",
     "seeProjects": "See my projects"
+  },
+ 
+
+
+  "work_experience": {
+    "title": "What I Have Done So Far.",
+    "title2": "Work Experience",
+    "description1": "I develop using .NET Core and Angular. In our digital transformation projects, we use innovative approaches such as Docker, Redis, RabbitMQ, ElasticSearch, and PostgreSql with Onion and N-Tier Arch.",
+    "date1": "January 2024 - Present",
+    "location1": "Ankara, Turkiye",
+    "company1": "Ministry of Foreign Affairs",
+    "jobTitle1": " Software Engineer",
+    
+    "description2": "Developed the UI of a service using React with DevExpress and MaterialUI. This application will be used internally by the company.",
+    "date2": "August 2023 - September 2023",
+    "location2": "Ankara, Turkiye",
+    "company2": "TAI",
+    "jobTitle2": "Software Engineering Intern",
+
+    "description3": "Developed a Full Stack Website using .NET Core, React (TypeScript), and PostgreSQL. I also developed a TCP Server Client application using WPF.",
+    "date3": "April 2023 - May 2023",
+    "location3": "Eskisehir, Turkiye",
+    "company3": "IOTech",
+    "jobTitle3": "Software Engineering Intern"
   },
   "experience":{
     "title":"What Skills I Have",
     "title2":"My Skills",
-    "category1":"Frontend Development",
-    "category2":"Backend Development",
+    "category1":"Infrastructure and Tooling Stack",
+    "category2":"Development Tech Stack",
     "level1":"Experienced",
     "level2":"Intermediate",
     "level3":"Beginner"

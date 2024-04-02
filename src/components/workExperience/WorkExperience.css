@@ -1,0 +1,32 @@
+.about{
+  height: 100%;
+}
+
+.workImg {
+  border-radius: 50%;
+  object-fit: scale-down;
+}
+
+
+
+/*===== Media Query(Mobile)===*/
+@media screen and (max-width: 600px) {
+  .about {
+    height: 100%;
+  }
+  .about_me {
+    width: 65%;
+    margin: 0 auto 3rem;
+  }
+
+  .about_content {
+    margin: auto;
+    width: 95%;
+    text-align: center;
+  }
+
+  .about_content p {
+    margin: 1.5rem 0;
+    font-size: medium;
+  }
+}
